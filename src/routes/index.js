@@ -5,16 +5,16 @@ import { Routes, Route } from 'react-router-dom'
 
 // Páginas da Empresa
 import Home from '../features/Home';
-import Flowers from '../features/Home';
-import Flower from '../features/Home';
-import About from '../features/Home';
-import Contact from '../features/Home';
+import Flowers from '../features/Flowers';
+import Flower from '../features/Flowers/Flower';
+import About from '../features/About';
+import Contact from '../features/Contact';
 
 // Páginas do Usuário
-import Login from '../features/Home';
-import Register from '../features/Home';
-import User from '../features/Home';
-import Cart from '../features/Home';
+import Login from '../features/Login';
+import Register from '../features/Register';
+import User from '../features/User';
+import Cart from '../features/Cart';
 
 function AppRoutes() {
     return (
