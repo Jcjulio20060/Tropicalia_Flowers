@@ -1,6 +1,149 @@
 {
     "flowers": [
-
+        {
+            "id": 1,
+            "name": "Antúrio Vermelho",
+            "price": 39.90,
+            "image": "../assets/",
+            "description": "O antúrio é uma planta tropical com folhas brilhantes e flores em forma de coração, disponível em várias cores. Ideal para a decoração de interiores, melhora a qualidade do ar e se adapta bem a ambientes com iluminação indireta e solo drenado.",
+            "category": "Tropical",
+            "origin": "América do Sul",
+            "careful": "Prefere luz indireta, solo drenado e rega moderada.",
+            "environment": "Interior",
+            "size": "30-50 cm"
+        },
+        {
+            "id": 2,
+            "name": "Bastão do Imperador",
+            "price": 14.99,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A planta bastão do imperador possui longas folhas verde-escuras com faixas amarelas e um caule ereto. Adaptada a ambientes internos, prefere luz indireta e requer rega moderada. Além de ser resistente a pragas, é conhecida por suas propriedades de purificação do ar.",
+            "category": "Tropical",
+            "origin": "Ásia",
+            "careful": "Luz indireta, rega moderada, solo úmido.",
+            "environment": "Interior",
+            "size": "60-100 cm"
+        },
+        {
+            "id": 3,
+            "name": "Bromélia",
+            "price": 19.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "Descrição: As bromélias são plantas que pertencem à família Bromeliaceae, caracterizadas por suas folhas em roseta, que formam uma estrutura central que retém água. Elas possuem flores vibrantes e são adaptadas a diversos ambientes, desde florestas tropicais até regiões áridas.",
+            "category": "Bromeliaceae",
+            "origin": "América Central e do Sul",
+            "careful": "Luz filtrada, regar no centro da roseta, solo bem drenado.",
+            "environment": "Interior/Exterior",
+            "size": "20-40 cm"
+        },
+        {
+            "id": 4,
+            "name": "Bougainvillea",
+            "price": 19.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Bougainvillea é uma planta trepadeira com brácteas coloridas que imitam flores e folhas verdes brilhantes. É resistente à seca, tornando-se ideal para jardins em climas tropicais e subtropicais.",
+            "category": "Trepadeira",
+            "origin": "América do Sul",
+            "careful": "Sol pleno, rega moderada, solo fértil.",
+            "environment": "Exterior",
+            "size": "1-3 m"
+        },
+        {
+            "id": 5,
+            "name": "Girassol",
+            "price": 12.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "O girassol é conhecido por sua grande flor amarela que segue o movimento do sol. Ideal para jardins ensolarados e arranjos florais.",
+            "category": "Flor",
+            "origin": "América do Norte",
+            "careful": "Sol pleno, rega regular, solo fértil.",
+            "environment": "Exterior",
+            "size": "1-2 m"
+        },
+        {
+            "id": 6,
+            "name": "Hibisco",
+            "price": 14.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "O hibisco possui flores grandes e coloridas, muito usadas em cercas vivas e jardins tropicais. Atrai borboletas e beija-flores.",
+            "category": "Flor",
+            "origin": "Ásia",
+            "careful": "Sol pleno, rega frequente, solo bem drenado.",
+            "environment": "Exterior",
+            "size": "1-3 m"
+        },
+        {
+            "id": 7,
+            "name": "Orquídea Oncidium",
+            "price": 89.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Orquídea Oncidium é conhecida por suas flores pequenas e várias, que normalmente possuem cores vibrantes como amarelo e marrom, além de um perfume doce. É uma planta epífita que se adapta bem a ambientes úmidos e pode florescer várias vezes ao ano.",
+            "category": "Orquídea",
+            "origin": "América Central e do Sul",
+            "careful": "Luz indireta, alta umidade, rega moderada.",
+            "environment": "Interior",
+            "size": "30-60 cm"
+        },
+        {
+            "id": 8,
+            "name": "Orquídea Cattleya",
+            "price": 69.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Orquídea Cattleya é famosa por suas grandes flores vibrantes e variadas em cores e formas. Além de sua beleza estética, é apreciada pelo aroma marcante e se adapta bem a diferentes ambientes.",
+            "category": "Orquídea",
+            "origin": "América do Sul",
+            "careful": "Luz indireta, rega moderada, boa ventilação.",
+            "environment": "Interior",
+            "size": "40-70 cm"
+        },
+        {
+            "id": 9,
+            "name": "Orquídea Cymbidium",
+            "price": 79.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A orquídea Cymbidium é conhecida por suas grandes e vibrantes flores em diversas cores, sendo de fácil cultivo e adaptando-se bem a ambientes internos e externos, preferindo temperaturas amenas e boa luminosidade.",
+            "category": "Orquídea",
+            "origin": "Ásia",
+            "careful": "Luz indireta, rega regular, substrato leve.",
+            "environment": "Interior/Exterior",
+            "size": "50-100 cm"
+        },
+        {
+            "id": 10,
+            "name": "Orquídea Miltonia",
+            "price": 69.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Orquídea Miltonia é conhecida por suas flores vibrantes...",
+            "category": "Orquídea",
+            "origin": "América do Sul",
+            "careful": "Luz difusa, rega frequente, substrato bem drenado.",
+            "environment": "Interior",
+            "size": "30-50 cm"
+        },
+        {
+            "id": 11,
+            "name": "Orquídea Phalaenopsis",
+            "price": 59.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Orquídea Phalaenopsis é famosa por suas flores elegantes e duradouras, ideais para ambientes internos e de fácil cultivo.",
+            "category": "Orquídea",
+            "origin": "Sudeste Asiático",
+            "careful": "Luz indireta, rega moderada, substrato leve.",
+            "environment": "Interior",
+            "size": "30-60 cm"
+        },
+        {
+            "id": 12,
+            "name": "Orquídea Vanda",
+            "price": 99.90,
+            "image": "https://example.com/rosa.jpg",
+            "description": "A Orquídea Vanda destaca-se por suas flores grandes e vibrantes, com cores intensas e exóticas. Requer boa luminosidade e umidade.",
+            "category": "Orquídea",
+            "origin": "Ásia",
+            "careful": "Luz intensa, alta umidade, rega frequente.",
+            "environment": "Interior/Exterior",
+            "size": "40-100 cm"
+        }
     ],
     "users": [
         

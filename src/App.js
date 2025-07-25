@@ -1,11 +1,18 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+
 import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <Header />
       <Routes />
-    </div>
-  );
+      <Footer />
+    </Router>
+  )
 }
 
 export default App;
