@@ -1,0 +1,18 @@
+.btn {
+    color: var(--cor-branca);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transform: 0.5s;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: ease-out 0.4s;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: ease-in 0.4s;
+}
+
+.Icon {
+    font-size: 1.5rem;
+}

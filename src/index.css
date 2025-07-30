@@ -5,7 +5,16 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    --cor-primaria: #f69;
+    --cor-secundaria: #f8acc4;
+    --cor-fundo: #dfc6ce;
+    --cor-texto: #333;
+    --cor-branca: #fff;
+    --sombra-padrao: 0 2px 5px #0000001a;
+}
+
 html, body, #root {
   background-color: #efefef;
-  height: 100%;                                      
+  height: 100%;                     
 }

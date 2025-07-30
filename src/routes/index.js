@@ -26,6 +26,8 @@ function AppRoutes() {
             <Route path="/flower/:id" element={<Flower />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/politic" element={<Contact />} />
+            <Route path="/terms" element={<Contact />} />
             {/* Rotas do Usuário */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
