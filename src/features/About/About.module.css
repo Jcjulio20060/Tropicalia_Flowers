@@ -1,0 +1,21 @@
+.About_Container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 5rem;
+    gap: .7rem;
+}
+
+.About_Info {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.About_Links {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
