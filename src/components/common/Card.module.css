@@ -1,0 +1,31 @@
+.Card_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--sombra-padrao);
+    background-color: var(--cor-branca);
+    width: 300px;
+}
+
+.Card_Container img {
+    height: 268px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Card_Container, .Card_Container img {
+    border-radius: .7rem; 
+}
+
+.Card_Container h2 {
+    margin-top: .7rem;
+}
+
+.Card_Buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+    gap: .5rem
+}

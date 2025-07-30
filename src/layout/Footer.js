@@ -1,6 +1,3 @@
-// Importação da Logo
-import Logo from '../assets/Logo.png';
-
 // Importação do LinkButton
 import LinkButton from '../components/LinkButton';
 
@@ -15,8 +12,8 @@ function Footer() {
         <footer>
             <section className={styles.Footer_Container}>
                 <div className={styles.Footer_Header}>
-                    <img src={Logo} alt="Logo Tropicália"/>
-                    <div classname={styles.Social_Icons}>
+                    <img src="/assets/Logo.png" alt="Logo Tropicália"/>
+                    <div className={styles.Social_Icons}>
                         <Button typeIcon="Facebook"/>
                         <Button typeIcon="Instagram"/>
                         <Button typeIcon="Whatsapp"/>

@@ -1,6 +1,3 @@
-// Importação da Logo
-import Logo from '../assets/Logo.png';
-
 // Importação do LinkButton
 import LinkButton from '../components/LinkButton';
 
@@ -14,7 +11,7 @@ function Header() {
     return (
         <header>
             <div className={styles.Header_Container}>
-                <img src={Logo} alt="Logo Troícália Flowers"/>
+                <img src="/assets/Logo.png" alt="Logo Troícália Flowers"/>
                 <h1>Tropicália Flowers</h1>
             </div>
             <div className={styles.Search_Container}>
