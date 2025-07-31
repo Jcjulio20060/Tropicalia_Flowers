@@ -56,3 +56,31 @@ nav {
 .NavBar li {
     list-style: none;
 }
+
+.NavBar_Icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.User {
+    position: relative;
+    display: inline-block;
+}
+
+.User_Dropdown {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.User:hover .User_Dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--cor-branca);
+    right: 1px;
+}

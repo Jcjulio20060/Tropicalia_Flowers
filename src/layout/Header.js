@@ -1,3 +1,6 @@
+// Importação do hook useState
+import { useState } from 'react';
+
 // Importação do LinkButton
 import LinkButton from '../components/LinkButton';
 
@@ -8,6 +11,8 @@ import Button from '../components/common/Button';
 import styles from './Header.module.css';
 
 function Header() {
+    const Logged = localStorage.getItem('Logged');
+
     return (
         <header>
             <div className={styles.Header_Container}>
@@ -27,7 +32,21 @@ function Header() {
                     <li><LinkButton to="/about" text="Sobre-nós"/></li>
                 </ul>
                 <div className={styles.NavBar_Icons}>
-                    <Button typeIcon="User"/>
+                    <div className={styles.User}>
+                        <Button typeIcon="User"/>
+                        {Logged ? 
+                            <ul className={styles.User_Dropdown}>
+                                <li><LinkButton to={`/user/${Logged}`} text="Minha Conta"/></li>
+                                <li><LinkButton to="/flowers" text="Configurações"/></li>
+                                <li><LinkButton to="/" text="Sair"/></li>
+                            </ul>
+                            :
+                            <ul className={styles.User_Dropdown}>
+                                <li><LinkButton to="/Login" text="Entrar"/></li>
+                                <li><LinkButton to="/Register" text="Registrar"/></li>
+                            </ul>
+                        }
+                    </div>
                     <LinkButton to="/cart" typeIcon="Cart"/>
                 </div>
             </nav>
