@@ -4,13 +4,14 @@
     padding: 0.5em 1em;
     text-decoration: none;
     transform: 0.5s;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 10px;
     transition: ease-out 0.4s;
 }
 
 .btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
+    color: var(--cor-texto);
     transition: ease-in 0.4s;
 }
 
