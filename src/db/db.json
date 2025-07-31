@@ -146,6 +146,29 @@
         }
     ],
     "users": [
-        
+        {
+            "id": 1,
+            "name": "Júlio César",
+            "email": "juliocesarqueiroz20060@gmail.com",
+            "password": "senha123",
+            "address": {
+                "cep": "12345-678",
+                "street": "Rua das Flores",
+                "number": "123",
+                "neighborhood": "Jardim Primavera",
+                "city": "São Paulo",
+                "state": "SP"
+                },
+            "cart": [
+                { 
+                    "FlowerID": "3",
+                    "Quantity": "2"
+                },
+                { 
+                    "FlowerID": "5",
+                    "Quantity": "1"
+                }
+            ]
+        }
     ]
 }
