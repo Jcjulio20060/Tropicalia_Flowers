@@ -1,0 +1,27 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.Login_Container {
+    background-color: var(--cor-branca);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--sombra-padrao);
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 1rem;
+}
+
+.Login_Container img {
+    width: 300px;
+}
+
+.Login_Container h2 {
+    color: var(--cor-primaira);
+    text-align: center;
+}

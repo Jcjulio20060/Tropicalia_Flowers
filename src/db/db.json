@@ -150,6 +150,7 @@
             "id": 1,
             "name": "Júlio César",
             "email": "juliocesarqueiroz20060@gmail.com",
+            "cpf": "123.456.789-00",
             "password": "senha123",
             "address": {
                 "cep": "12345-678",
