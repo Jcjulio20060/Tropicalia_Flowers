@@ -1,6 +1,3 @@
-// Importação do LinkButton
-import LinkButton from '../components/LinkButton';
-
 // Importação do Componente Botão
 import Button from '../components/common/Button';
 
@@ -14,9 +11,9 @@ function Footer() {
                 <div className={styles.Footer_Header}>
                     <img src="/assets/Logo.png" alt="Logo Tropicália"/>
                     <div className={styles.Social_Icons}>
-                        <Button typeIcon="Facebook"/>
-                        <Button typeIcon="Instagram"/>
-                        <Button typeIcon="Whatsapp"/>
+                        <Button icon="Facebook"/>
+                        <Button icon="Instagram"/>
+                        <Button icon="Whatsapp"/>
                     </div>
                 </div>
                 <div className={styles.Footer_Info}>
@@ -28,9 +25,9 @@ function Footer() {
                 </div>
             </section>
             <div className={styles.Footer_Links}>
-                <LinkButton to="/about" text="Sobre"/>
-                <LinkButton to="/politic" text="Política de Privacidade"/>
-                <LinkButton to="/terms" text="Termos de Uso"/>
+                <Button to="/about" text="Sobre" customClass="link"/>
+                <Button to="/politic" text="Política de Privacidade" customClass="link"/>
+                <Button to="/terms" text="Termos de Uso" customClass="link"/>
             </div>
             <p>© 2025 Tropicalia Flores. Todos os direitos reservados.</p>
         </footer>

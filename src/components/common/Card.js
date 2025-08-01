@@ -1,5 +1,4 @@
 // Importação do Botão
-import LinkButton from '../LinkButton';
 import Button from './Button';
 
 // Importação do estilo do botão
@@ -13,7 +12,7 @@ function Card({ data }){
             <p>Preço R$ {data.price}</p>
             <div className={styles.Card_Buttons}>
                 <Button text="Adicionar ao Carrinho" />
-                <LinkButton to={`/flower/${data.id}`} text="Mais Informações" />
+                <Button to={`/flower/${data.id}`} text="Mais Informações" />
             </div>
         </div>
     )

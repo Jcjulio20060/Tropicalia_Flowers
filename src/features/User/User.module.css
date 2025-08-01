@@ -1,0 +1,19 @@
+.User_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.User_Context {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cor-branca);
+    margin: 2rem;
+    border-radius: 1rem;
+    text-align: end;
+}

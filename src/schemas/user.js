@@ -1,6 +1,8 @@
 const userSchema = {
   name: '',
   email: '',
+  cpf: "",
+  birthday: "",
   password: '',
   address: {
     cep: '',

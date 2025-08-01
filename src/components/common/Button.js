@@ -1,18 +1,33 @@
 // Importação do componente de ícones
 import Icons from './Icons';
 
+// Importação do React-Router
+import { Link } from 'react-router-dom';
+
 // Importação do estilo do botão
 import styles from './Button.module.css';
 
-function Button({ text, typeIcon, onClick, customClass }) {
-    const iconObj = Icons.find(icon => icon.name === typeIcon);
+function Button({ text, icon, onClick, customClass, to }) {
+    // Busca o objeto do ícone (corrigindo a busca para usar o `name` do ícone)
+    const iconObj = Icons.find(item => item.name === icon);
     const IconComponent = iconObj ? iconObj.icon : null;
 
+    // Lógica para decidir se renderiza um <Link> ou um <button>
+    // Se a prop `to` existir, ele renderiza um Link
     return (
-        <button className={`${styles.btn} ${styles[customClass]}`} onClick={onClick}>
-            {IconComponent && <IconComponent className={styles.Icon}/>}
-            {text}
-        </button>
+        <>
+            {to ? (
+                <Link to={to} className={`${styles.btn} ${styles[customClass]}`}>
+                    {IconComponent && <IconComponent className={styles.Icon}/>}
+                    {text}
+                </Link>
+            ) : (
+                <button className={`${styles.btn} ${styles[customClass]}`} onClick={onClick}>
+                    {IconComponent && <IconComponent className={styles.Icon}/>}
+                    {text}
+                </button>
+            )}
+        </>
     );
 }
 
