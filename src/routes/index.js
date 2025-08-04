@@ -31,7 +31,7 @@ function AppRoutes() {
             {/* Rotas do Usuário */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/user/:id" element={<User />} />
+            <Route path="/user" element={<User />} />
             <Route path="/cart" element={<Cart />} />
         </Routes>
     )

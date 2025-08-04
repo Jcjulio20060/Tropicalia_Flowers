@@ -51,7 +51,7 @@ function Login() {
                 <img src="/assets/Logo.png" alt="Logo Tropicália Flowers"/>
                 <h2>Login</h2>
                 {loginError && <p className={styles.error}>{loginError}</p>}
-                <Form type="Login" txtBtn="Entrar" onSubmit={handleLogin}/>
+                <Form type="Login" txtBtn="Entrar" handleButton={handleLogin}/>
             </div>
         </div>
     )

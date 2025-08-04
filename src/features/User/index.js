@@ -1,6 +1,3 @@
-// Importação do useParams
-import { useParams } from 'react-router-dom';
-
 // Importação do formulário
 import Form from '../../components/Form';
 
@@ -11,9 +8,9 @@ import useAxios from '../../hooks/useAxios';
 import styles from './User.module.css';
 
 function User() {
-    const { id } = useParams;
+    const id = localStorage.getItem('Logged');
 
-    const { data: users, loading, error } = useAxios(`http://localhost:5000/users/1`, 'get', []);
+    const { data: users, loading, error } = useAxios(`http://localhost:5000/users/${id}`, 'get', []);
 
     if (loading) return <p>Carregando flores...</p>;
     if (error) return <p>Erro: {error.message}</p>;
