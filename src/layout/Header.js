@@ -10,6 +10,11 @@ import styles from './Header.module.css';
 function Header() {
     const Logged = localStorage.getItem('Logged');
 
+    function LeaveAccount() {
+        localStorage.removeItem('Logged');
+        alert('Desconectado com Sucesso');
+    }
+
     return (
         <header>
             <div className={styles.Header_Container}>
@@ -35,7 +40,7 @@ function Header() {
                             <ul className={styles.User_Dropdown}>
                                 <li><Button to={`/user`} text="Minha Conta" customClass="link"/></li>
                                 <li><Button to="/flowers" text="Configurações" customClass="link"/></li>
-                                <li><Button to="/" text="Sair" customClass="link"/></li>
+                                <li><Button to="/" text="Sair" customClass="link" onClick={LeaveAccount}/></li>
                             </ul>
                             :
                             <ul className={styles.User_Dropdown}>

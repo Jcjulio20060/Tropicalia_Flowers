@@ -4,11 +4,17 @@ import useAxios from '../../hooks/useAxios';
 // Importação do Componente Card
 import Card from '../../components/common/Card';
 
+// Importação do hook useCart
+import useCart from '../../hooks/useCart';
+
 // Importação dos estilos da página
 import styles from './Home.module.css';
 
 function Home() {
     const { data: flowers, loading, error } = useAxios('http://localhost:5000/flowers', 'get', []);
+
+    // Hook para a lógica do carrinho
+    const { cart, cartLoading, cartError, addToCart } = useCart();
 
     if (loading) return <p>Carregando flores...</p>;
     if (error) return <p>Erro: {error.message}</p>;
@@ -23,12 +29,12 @@ function Home() {
             <h1>Flores em Destaque</h1>
             <div className={styles.Home_Cards}>
                 {NormalFlowers.map((data) => (
-                    <Card data={data}/>
+                    <Card data={data} onAddToCart={addToCart}/>
                 ))}
             </div>
             <h1>Promoções de Orquídeas</h1>
             <div className={styles.Home_Cards}>
-                {Orquídeas.map(flower => <Card data={flower}/>)}
+                {Orquídeas.map(flower => <Card data={flower} onAddToCart={addToCart}/>)}
             </div>
         </div>
     )
