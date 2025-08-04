@@ -1,4 +1,4 @@
-import { FaSearch, FaUser, FaShoppingCart, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaSearch, FaUser, FaShoppingCart, FaFacebook, FaInstagram, FaWhatsapp, FaTrash } from 'react-icons/fa';
 
 const icons = [
     {
@@ -24,6 +24,10 @@ const icons = [
     {
         name: "Whatsapp",
         icon: FaWhatsapp
+    },
+    {
+        name: "Lixeira",
+        icon: FaTrash
     },
 ];
 
